@@ -62,11 +62,11 @@ while (rodando)
             else
             {
                 Console.Write("Notas: ");
-                foreach (double nota in notas)
-                {
-                    Console.Write($"{nota} ");
+                for (int i = 0; i < notas.Count; i++){
+                    if (I < notas.Count - 1){
+                        Console.Write(", ");
+                    }
                 }
-                Console.WriteLine("\n");
             }
             break;
         case 4:
