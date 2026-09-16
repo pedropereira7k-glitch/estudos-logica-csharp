@@ -63,7 +63,7 @@ while (rodando)
             {
                 Console.Write("Notas: ");
                 for (int i = 0; i < notas.Count; i++){
-                    if (I < notas.Count - 1){
+                    if (i < notas.Count - 1){
                         Console.Write(", ");
                     }
                 }
