@@ -4,7 +4,7 @@ Console.Write("Digite um número: ");
 
 if (int.TryParse(Console.ReadLine(), out int numero))
 {
-    if (numero < 5)
+    if (numero < 0)
     {
         Console.WriteLine("Apenas número positivos.");
     }
