@@ -18,7 +18,9 @@ class Produto
         set
         {
             if (value > 0)
+            {
                 _preco = value;
+            }
         }
     }
 
@@ -28,7 +30,9 @@ class Produto
         set
         {
             if (value >= 0)
+            {
                 _estoque = value;
+            }
         }
     }
 
@@ -41,10 +45,8 @@ class Produto
 
     public void ExibirInfo()
     {
-        Console.WriteLine($"Nome: {Nome}");
-        Console.WriteLine($"Preço: {Preco}");
-        Console.WriteLine($"Estoque: {Estoque}");
-        Console.WriteLine();
+        Console.WriteLine($"=== Produto ===");
+        Console.WriteLine($"{Nome} - R$ {Preco:F2} - Estoque: {Estoque}");
     }
 
     public void AtualizarEstoque(int quantidade)
@@ -62,7 +64,17 @@ class Program
         p.ExibirInfo();
         p.AtualizarEstoque(5);
         p.ExibirInfo();
-        p.Preco = -100;
+
+        double novoPreco = -100;
+        if (novoPreco > 0)
+        {
+            p.Preco = novoPreco;
+        }
+        else
+        {
+            Console.WriteLine("Preço inválido. Mantendo valor anterior.");
+        }
+
         p.ExibirInfo();
     }
 }
