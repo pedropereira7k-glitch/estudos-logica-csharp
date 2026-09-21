@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 class Funcionario
 {
@@ -10,7 +9,7 @@ class Funcionario
         this.Nome = nome;
         this.Salario = salario;
     }
-
+    
     public virtual void ExibirInfo()
     {
         Console.WriteLine($"Nome: {Nome}");
