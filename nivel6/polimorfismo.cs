@@ -6,8 +6,7 @@ class Funcionario
     public string Nome { get; set; }
     public double Salario { get; set; }
 
-    public Funcionario(string nome, double salario)
-    {
+    public Funcionario(string nome, double salario) {
         this.Nome = nome;
         this.Salario = salario;
     }
@@ -52,8 +51,7 @@ class Program
             new Funcionario("João", 3500)
         };
 
-        foreach (Funcionario funcionario in listaFuncionarios)
-        {
+        foreach (Funcionario funcionario in listaFuncionarios){
             funcionario.ExibirInfo();
         }
     }
