@@ -52,6 +52,10 @@ class Program
                 {
                     estoqueValido = true;
                 }
+                else
+                {
+                    Console.WriteLine("Erro: o estoque do produto tem que ser maior ou igual a zero.");
+                }
             }
             catch (FormatException)
             {
