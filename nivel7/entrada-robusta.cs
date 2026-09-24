@@ -54,18 +54,19 @@ class Program
                 }
                 else
                 {
-                    Console.WriteLine("Erro: o estoque do produto tem que ser maior ou igual a zero.");
+                    Console.WriteLine(
+                        "Erro: o estoque do produto tem que ser maior ou igual a zero."
+                    );
                 }
             }
             catch (FormatException)
             {
                 Console.WriteLine("Erro: formato de estoque inválido. Tente novamente.");
             }
-            catch  (Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine($"Erro inesperado: {ex.Message}");
             }
-
         } while (!estoqueValido);
 
         Console.WriteLine("Produto cadastrado:");
